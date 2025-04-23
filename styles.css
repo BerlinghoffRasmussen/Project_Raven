@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     color: #333;
 }
 
@@ -58,4 +58,13 @@ button:hover {
 
 #radarChart {
     margin: 20px auto;
+}
+
+#archetypeResult {
+    margin-top: 30px;
+}
+
+#archetypeName {
+    font-weight: bold;
+    font-size: 1.2em;
 }

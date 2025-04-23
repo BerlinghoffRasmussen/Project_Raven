@@ -1,6 +1,6 @@
-// Full list of 50 questions with their dimensions
+// Array of 50 questions across five dimensions
 const questions = [
-    // Economic Questions
+    // Economic Dimension (10 questions)
     { text: "The government should provide healthcare for all citizens.", dimension: "economic" },
     { text: "Progressive taxation is a fair way to fund government services.", dimension: "economic" },
     { text: "A minimum wage is necessary to ensure fair compensation.", dimension: "economic" },
@@ -12,56 +12,91 @@ const questions = [
     { text: "Government subsidies for industries are beneficial.", dimension: "economic" },
     { text: "Privatizing public services improves efficiency.", dimension: "economic" },
     
-    // Social Questions
+    // Social Dimension (10 questions)
     { text: "Protecting individual rights is more important than ensuring collective security.", dimension: "social" },
-    { text: "The primary goal of the justice system should be rehabilitation rather than punishment.", dimension: "social" },
-    { text: "Law enforcement agencies require increased oversight to prevent abuse of power.", dimension: "social" },
-    { text: "Social welfare programs are crucial for maintaining social equity.", dimension: "social" },
-    { text: "Affirmative action policies are necessary to correct historical injustices.", dimension: "social" },
-    { text: "Freedom of speech should be absolute, without any restrictions.", dimension: "social" },
-    { text: "The use of recreational drugs should be decriminalized.", dimension: "social" },
-    { text: "Education at all levels should be publicly funded and free for citizens.", dimension: "social" },
-    { text: "Social media platforms should be subject to government regulation.", dimension: "social" },
-    { text: "Immigration policies should prioritize inclusivity and diversity.", dimension: "social" },
+    { text: "The justice system should focus on rehabilitation rather than punishment.", dimension: "social" },
+    { text: "Law enforcement needs more oversight to prevent abuse of power.", dimension: "social" },
+    { text: "Social welfare programs are essential for fairness in society.", dimension: "social" },
+    { text: "Affirmative action is needed to address past injustices.", dimension: "social" },
+    { text: "Freedom of speech should have no limits.", dimension: "social" },
+    { text: "Recreational marijuana should be legal.", dimension: "social" },
+    { text: "Education should be free and publicly funded at all levels.", dimension: "social" },
+    { text: "Social media should be regulated by the government.", dimension: "social" },
+    { text: "Immigration policies should be open and inclusive.", dimension: "social" },
     
-    // Environmental Questions
-    { text: "Addressing climate change should be the top priority for global policy.", dimension: "environmental" },
-    { text: "Investment in renewable energy should take precedence over fossil fuel development.", dimension: "environmental" },
-    { text: "Strict environmental regulations are necessary to preserve natural resources.", dimension: "environmental" },
-    { text: "Sustainable development should be integrated into all economic planning.", dimension: "environmental" },
-    { text: "Implementing carbon taxes is an effective strategy to combat climate change.", dimension: "environmental" },
-    { text: "The loss of biodiversity is a critical issue requiring immediate action.", dimension: "environmental" },
-    { text: "Genetically modified organisms (GMOs) offer more benefits than risks.", dimension: "environmental" },
-    { text: "Nuclear energy is a necessary component of a clean energy future.", dimension: "environmental" },
-    { text: "International cooperation is essential to address environmental challenges.", dimension: "environmental" },
-    { text: "Economic growth should be pursued only if it does not harm the environment.", dimension: "environmental" },
+    // Environmental Dimension (10 questions)
+    { text: "Climate change should be the top global priority.", dimension: "environmental" },
+    { text: "Renewable energy should replace fossil fuels as soon as possible.", dimension: "environmental" },
+    { text: "Strict environmental laws are needed to protect nature.", dimension: "environmental" },
+    { text: "All economic plans should prioritize sustainability.", dimension: "environmental" },
+    { text: "Carbon taxes are a good way to fight climate change.", dimension: "environmental" },
+    { text: "Biodiversity loss is an urgent problem.", dimension: "environmental" },
+    { text: "GMOs are more helpful than harmful.", dimension: "environmental" },
+    { text: "Nuclear energy is key to a clean energy future.", dimension: "environmental" },
+    { text: "Global teamwork is vital for environmental issues.", dimension: "environmental" },
+    { text: "Economic growth shouldn’t harm the environment.", dimension: "environmental" },
     
-    // Foreign Policy Questions
-    { text: "Military intervention can be justified to protect national interests.", dimension: "foreign" },
-    { text: "Free trade agreements generally have a positive impact on the economy.", dimension: "foreign" },
-    { text: "International organizations like the UN are effective in promoting peace.", dimension: "foreign" },
-    { text: "Foreign aid should be tied to human rights improvements in recipient countries.", dimension: "foreign" },
-    { text: "National sovereignty should be respected even when it conflicts with international law.", dimension: "foreign" },
-    { text: "Economic sanctions are a useful tool for achieving foreign policy goals.", dimension: "foreign" },
-    { text: "Diplomatic solutions should always be exhausted before military action.", dimension: "foreign" },
-    { text: "Global challenges like climate change require coordinated international efforts.", dimension: "foreign" },
-    { text: "Immigration policies should prioritize national security.", dimension: "foreign" },
-    { text: "The country should avoid involvement in foreign conflicts whenever possible.", dimension: "foreign" },
+    // Foreign Policy Dimension (10 questions)
+    { text: "Military action is okay to protect national interests.", dimension: "foreign" },
+    { text: "Free trade deals are good for the economy.", dimension: "foreign" },
+    { text: "The UN is effective at keeping peace.", dimension: "foreign" },
+    { text: "Foreign aid should depend on human rights progress.", dimension: "foreign" },
+    { text: "National sovereignty trumps international law.", dimension: "foreign" },
+    { text: "Sanctions are a useful foreign policy tool.", dimension: "foreign" },
+    { text: "Diplomacy should always come before military action.", dimension: "foreign" },
+    { text: "Global issues like climate change need international action.", dimension: "foreign" },
+    { text: "Immigration policies should focus on security.", dimension: "foreign" },
+    { text: "We should stay out of foreign conflicts.", dimension: "foreign" },
     
-    // Governance and Rights Questions
-    { text: "Democracy is the most effective system of governance.", dimension: "governance" },
-    { text: "Government operations should be fully transparent to ensure accountability.", dimension: "governance" },
-    { text: "Civil liberties must be protected under all circumstances.", dimension: "governance" },
-    { text: "Voting in elections should be a mandatory civic duty.", dimension: "governance" },
-    { text: "The judicial branch should operate independently from political pressures.", dimension: "governance" },
-    { text: "A free and independent press is essential for democracy.", dimension: "governance" },
-    { text: "Government surveillance programs are necessary for national security.", dimension: "governance" },
-    { text: "Political campaigns should be publicly funded to reduce corruption.", dimension: "governance" },
-    { text: "Decentralizing power to local governments improves governance.", dimension: "governance" },
-    { text: "Human rights standards should be universally applied without exceptions.", dimension: "governance" }
+    // Governance and Rights Dimension (10 questions)
+    { text: "Democracy is the best form of government.", dimension: "governance" },
+    { text: "Government should be fully transparent.", dimension: "governance" },
+    { text: "Civil liberties must always be protected.", dimension: "governance" },
+    { text: "Voting should be required by law.", dimension: "governance" },
+    { text: "Judges should be free from political influence.", dimension: "governance" },
+    { text: "A free press is critical for democracy.", dimension: "governance" },
+    { text: "Surveillance is justified for national security.", dimension: "governance" },
+    { text: "Campaigns should be publicly funded to stop corruption.", dimension: "governance" },
+    { text: "Local governments should have more power.", dimension: "governance" },
+    { text: "Human rights should apply everywhere, no exceptions.", dimension: "governance" }
 ];
 
-// Test page logic (runs on test.html)
+// Define political archetypes with scores and descriptions
+const archetypes = [
+    {
+        name: "Progressive",
+        scores: { economic: 0, social: 8, environmental: 8, foreign: 0, governance: 8 },
+        description: "You’re all about social justice, environmental care, and personal freedoms. You’re okay with government stepping in to make things fairer and like working with other countries on big issues."
+    },
+    {
+        name: "Conservative",
+        scores: { economic: 8, social: -8, environmental: -8, foreign: 8, governance: 0 },
+        description: "You value free markets, traditional ways, and a strong defense. You prefer less government in daily life and take a cautious approach to change."
+    },
+    {
+        name: "Libertarian",
+        scores: { economic: -8, social: -8, environmental: 0, foreign: -8, governance: -8 },
+        description: "Freedom is your top priority—less government, more individual choice. You support free markets and personal rights, and you’re wary of authority."
+    },
+    {
+        name: "Centrist",
+        scores: { economic: 0, social: 0, environmental: 0, foreign: 0, governance: 0 },
+        description: "You’re in the middle, mixing ideas from all sides. You like balance and practical solutions over extreme positions."
+    }
+];
+
+// Function to calculate distance between user scores and archetypes
+function calculateDistance(userScores, archetypeScores) {
+    return Math.sqrt(
+        Math.pow(userScores.economic - archetypeScores.economic, 2) +
+        Math.pow(userScores.social - archetypeScores.social, 2) +
+        Math.pow(userScores.environmental - archetypeScores.environmental, 2) +
+        Math.pow(userScores.foreign - archetypeScores.foreign, 2) +
+        Math.pow(userScores.governance - archetypeScores.governance, 2)
+    );
+}
+
+// Logic for test.html: Handle questions and answers
 if (document.getElementById('questionContainer')) {
     let currentQuestion = 0;
     let answers = new Array(questions.length).fill(null);
@@ -84,7 +119,7 @@ if (document.getElementById('questionContainer')) {
                 calculateScores();
             }
         } else {
-            alert('Please select an answer');
+            alert('Please select an answer.');
         }
     });
 
@@ -106,9 +141,8 @@ if (document.getElementById('questionContainer')) {
         questions.forEach((q, i) => {
             scores[q.dimension] += parseInt(answers[i]);
         });
-        // Normalize scores (assuming 10 questions per dimension)
         for (let dimension in scores) {
-            scores[dimension] = (scores[dimension] / 10).toFixed(1);
+            scores[dimension] = (scores[dimension] / 10).toFixed(1); // Normalize to -2 to 2
         }
         const url = `results.html?economic=${scores.economic}&social=${scores.social}&environmental=${scores.environmental}&foreign=${scores.foreign}&governance=${scores.governance}`;
         window.location.href = url;
@@ -117,7 +151,7 @@ if (document.getElementById('questionContainer')) {
     displayQuestion();
 }
 
-// Results page logic (runs on results.html)
+// Logic for results.html: Show chart and archetype
 if (document.getElementById('radarChart')) {
     const urlParams = new URLSearchParams(window.location.search);
     const scores = {
@@ -127,6 +161,19 @@ if (document.getElementById('radarChart')) {
         foreign: parseFloat(urlParams.get('foreign')) || 0,
         governance: parseFloat(urlParams.get('governance')) || 0
     };
+
+    let closestArchetype = null;
+    let minDistance = Infinity;
+    archetypes.forEach(archetype => {
+        const distance = calculateDistance(scores, archetype.scores);
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestArchetype = archetype;
+        }
+    });
+
+    document.getElementById('archetypeName').innerText = `You are a ${closestArchetype.name}!`;
+    document.getElementById('archetypeDescription').innerText = closestArchetype.description;
 
     const ctx = document.getElementById('radarChart').getContext('2d');
     new Chart(ctx, {
@@ -145,8 +192,8 @@ if (document.getElementById('radarChart')) {
             scales: {
                 r: {
                     angleLines: { display: true },
-                    suggestedMin: -10,
-                    suggestedMax: 10
+                    suggestedMin: -2,
+                    suggestedMax: 2
                 }
             }
         }
