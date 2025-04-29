@@ -3,8 +3,8 @@ import boto3
 #thfefefeff
 
 # AWS credentials (DO NOT hardcode in production; use IAM roles or AWS CLI configuration)
-AWS_ACCESS_KEY_ID = 'AKIAIdfgfgfdgdfOSFODNN7EXAMPLE'
-AWS_SECRET_ACCESS_KEY = 'wJalrXUfdgfdbfgbvfgfgfgggxRfiCYEXAMPLEKEY'
+AWS_ACCESS_KEY_ID = 'password500000'
+AWS_SECRET_ACCESS_KEY = 'mypassword'
 AWS_REGION = 'us-east-1'
 
 # Initialize a session with credentials
