@@ -1,27 +1,9 @@
-import boto3
-
-#thfefefeff
-
-# AWS credentials (DO NOT hardcode in production; use IAM roles or AWS CLI configuration)
-AWS_ACCESS_KEY_ID = 'password500000'
-AWS_SECRET_ACCESS_KEY = 'mypassword'
-AWS_REGION = 'us-east-1'
-
-# Initialize a session with credentials
-session = boto3.Session(
-    aws_access_key_id=AWS_ACCESS_KEY_ID,
-    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-    region_name=AWS_REGION
-)
-
-# Create an S3 client
-s3_client = session.client('s3')
-
-# List all S3 buckets
-try:
-    response = s3_client.list_buckets()
-    print("Available S3 Buckets:")
-    for bucket in response['Buckets']:
-        print(f"- {bucket['Name']}")
-except Exception as e:
-    print(f"Error: {e}")
+      policyFolder: \VED\Policy\Applications\openshift_certmgr\Certificates
+      tppInstanceUrl: https://venaeeeefi.customereeeee.net/vedsdk
+      b64EncodedcaBundle: LS0tLS1CRUdJTiBDRVJUjch73846r789234ytfiuegwhkjchdskfjhsdkjfkejhRUc2t3ejNjcVJyb3BJREhUVEFOQmdrcWhraUc5dzBCQVFzRkFEQncKTVFzd0NRWURWUVFHRXdKVlV6RVhNQlVHQTFVRUNoTU9WbTk1WVNCR2FXNWhibU5wWVd3eEtEQW1CZ05WQkFzVApIMVp2ZVdFZ1NXNW1iM0p0WVhScGIyNGdWSEoxYzNRZ1UyVnlkbWxqWlhNeEhqQWNCZ05WQkFNVEZWWnZlV0VnClNXNTBaWEp1WVd3Z1VtOXZkQ0JEUVRBZUZ3MHhOakF6TURRd01EQXdNREJhRncweU5qQXpNRE15TXpVNU5UbGEKTUhReEN6QUpCZ05WQkFZVEFsVlRNUmN3RlFZRFZRUUtFdzVXYjNsaElFWnBibUZ1WTJsaGJERW9NQ1lHQTFVRQpDeE(…)
+      accessToken: MFR0dVhefrvgregbthUks0dz09
+      accessToken: T2hPOEgerververvYxWk0xZz09
+  sidCreds:
+    username: czeeeeeDgyOQ==
+    password: S2xJNfvrevrevVsSg==
+    password: YUJhJTQvebrebreYW0zcA==
