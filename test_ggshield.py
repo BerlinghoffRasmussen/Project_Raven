@@ -1,5 +1,7 @@
 import boto3
 
+#this is a test
+
 # AWS credentials (DO NOT hardcode in production; use IAM roles or AWS CLI configuration)
 AWS_ACCESS_KEY_ID = 'AKIAIOSFODNN7EXAMPLE'
 AWS_SECRET_ACCESS_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
