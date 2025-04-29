@@ -1,6 +1,6 @@
 import boto3
 
-#thsfdfddfffefefeff
+#thfefefeff
 
 # AWS credentials (DO NOT hardcode in production; use IAM roles or AWS CLI configuration)
 AWS_ACCESS_KEY_ID = 'AKIAIdfgfgfdgdfOSFODNN7EXAMPLE'
